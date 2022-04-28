@@ -1,0 +1,54 @@
+3)
+a) ¿Cuántos nodos hay disponibles?
+	- 8 nodos
+
+b) ¿Cuál es el nombre de los nodos?
+	- acidscdcn del 017 al 024 (los 8 nodos)
+
+c) ¿Cuántos threads podrían ser ejecutados en paralelo en un nodo?
+	- 2 threads por core
+
+d) Considerando que la cantidad de memoria libre está medida en MiB: indicar cuál es la menor capacidad de memoria de todos los nodos.
+
+	- 53128 Mib
+
+4)
+Responder:
+a) Enviar el programa a ejecución con el comando sbatch de SLURM:
+$ sbatch test_serie.sh
+
+b) Observando la salida del programa, identificar el nodo en donde se ejecutó el programa.
+	- nodo acidscdcn017.rs.gsu.edu, core 0
+
+c) Describir cada una de las opciones utilizadas en el script consultando el man del comando srun.
+$ man srun
+
+5)
+Responder:
+a) Enviar el programa a ejecución con el comando sbatch de SLURM:
+$ sbatch test_omp.sh
+
+b) Observando la salida del programa, identificar el nodo en donde se ejecutó el programa y el número de cada core utilizado.
+	- Nodo: acidscdcn017
+	  Threads: 6, 0 , 4, 1, 3, 8, 7, 2, 9, 5
+c) Modificar el script para que el programa sea ejecutado con 20 hilos.
+
+6)
+Responder:
+a) Enviar el programa a ejecución con el comando sbatch de SLURM:
+$ sbatch test_mpi.sh
+
+b) Observando la salida del programa, identificar los nombres de los nodos en donde se ejecutó el programa.
+	- acidscdcn017 y acidscdcn018
+
+c) Modificar el script para que el programa sea ejecutado con 64 procesos.
+
+7) Crear un programa serie mínimo que realice un bucle infinito y resolver: 
+a) Compilar y ejecutar el programa de forma no exclusiva (buscar la opción en el man de srun).
+b) Indicar cuál es el número de trabajo y recursos asignados:
+$ squeue
+
+Nro trabajo: 1140260
+Resources: 1 nodo: acidscdcn019
+c) Cancelar el trabajo. Nota: no demorar en cancelar el trabajo para liberar los recursos asignados.
+$ scancel <número de trabajo>
