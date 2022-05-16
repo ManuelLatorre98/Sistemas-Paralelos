@@ -23,7 +23,7 @@ int main() {
     v_2Neg= _mm256_set1_epi32 (-2);//lleno vector con -2
     v_80= _mm256_set1_epi32 (80);//Los saltos entre comparaciones son de 80 esto es lo que le voy a sumar
 
-    vComp2= _mm256_setr_epi32 (0,10,20,30,40,50,60,70,80);//i*10
+    vComp2= _mm256_setr_epi32 (0,10,20,30,40,50,60,70);//i*10
     
     for(i=0; i < cantIteraciones; i++){
         vActual= _mm256_load_si256 ((__m256i const *) v+(i));
