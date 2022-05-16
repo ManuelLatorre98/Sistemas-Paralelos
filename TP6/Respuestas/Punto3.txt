@@ -1,0 +1,20 @@
+a) Se pase la variable como private a la región paralela
+- SALIDA:   var (in): 1
+            var (in): 1
+            var (in): 1
+            var (in): 1
+            var (out): 10
+Al definir var como privada esta pierde el valor anterior y se inicializo con 0, por esto es que cada thread
+llamo a inc(var) devolviendo var+1=0+1, luego el print de fuera del parallel imprime 10 ya que era el valor
+con el cual se inicializo var
+
+b) En este caso con firstPrivate las var de cada hilo mantienen los valores con los cual se inicializaron
+por lo tanto llaman a inc(var) devolviendo var+1=10+1, luego el print de fuera del parallel imprime 10 ya 
+que era el valor con el cual se incializo var
+
+c) Al usar shared estamos diciendo que var es compartida para todos los threads y que mantiene el valor de
+fuera de la construccion, luego imprime la ultima ejecucion siempre ya que hay un sleep en la funcion
+
+d) Al usar seccion critica definimos la funcion inc(var) como zona de exlusion mutua por lo que los hilos
+solo la podran ejecutar de a 1, como los var eran compartidos cuando un hilo lo ejecuta incrementa en uno
+luego al ejecutar el siguiente hilo la funcion
