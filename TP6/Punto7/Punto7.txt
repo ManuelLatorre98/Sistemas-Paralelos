@@ -1,0 +1,4 @@
+Figura 1: #pragma omp for schedule(dynamic[,2]) 
+Figura 2: #pragma omp for schedule(static,2) 
+Figura 3: #pragma omp for schedule(static,5)
+Figura 4: #pragma omp for shcedule(guided[,2]

@@ -1,4 +1,0 @@
-Salida single thread: Tiempo de ejecucion 16.006964 seconds
-Salida con 2 threads: Tiempo de ejecucion 8.001779 seconds
-Salida con 4 threads: Tiempo de ejecucion 4.004984 seconds
-Salida con 8 threads: Tiempo de ejecucion 2.002541 seconds

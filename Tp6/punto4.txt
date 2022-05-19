@@ -1,2 +1,0 @@
-Se mezclan los mensajes ya que los hilos se ejecutan en paralelo y su orden
-depende del procesador
