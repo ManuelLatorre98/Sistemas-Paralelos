@@ -1,0 +1,32 @@
+Tiempo de ejecucion con 4 threads:
+
+    Tiempo: 3.011893 segundos
+    Tiempo: 3.011887 segundos
+    Tiempo: 3.011932 segundos
+    Tiempo: 3.011932 segundos
+
+Tiempo de ejecucion de 2 threads:
+    Ejecutando tarea 2 por thread 1 
+    Ejecutando tarea 1, por thread 0 
+    Ejecutando tarea 3 por thread 0 
+    Tiempo: 3.000545 segundos de thread 1
+    Tiempo: 4.000784 segundos de thread 0
+
+Tiempo de ejecucion con 3 threads:
+    Ejecutando tarea 1, por thread 0 
+    Ejecutando tarea 2 por thread 1 
+    Ejecutando tarea 3 por thread 2 
+    Tiempo: 2.000472 segundos de thread 0
+    Tiempo: 2.000547 segundos de thread 2
+    Tiempo: 3.000517 segundos de thread 1 
+
+Tiempo de ejecucion 4 threads  (tarda mas que el anterior por planificacion)
+   Ejecutando tarea 3 por thread 2 
+    Ejecutando tarea 2 por thread 0 
+    Ejecutando tarea 1, por thread 3 
+    Tiempo: 0.000685 segundos de thread 1  //Este se encarga de imprimir
+    Tiempo: 2.000858 segundos de thread 2
+    Tiempo: 2.000874 segundos de thread 3
+    Tiempo: 3.000891 segundos de thread 0
+
+//Si pongo mas hilos no hacen nada ya que no se le pueden añadir tareas
