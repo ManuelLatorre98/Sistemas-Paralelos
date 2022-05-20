@@ -1,0 +1,2 @@
+Menor tiempo de ejecucion con 4 (num de cores del pc) threads ya que hay 
+un thread por cpu y se evitan tareas de planificacion
