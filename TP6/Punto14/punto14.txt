@@ -1,0 +1,3 @@
+¿Puede quedar impreso en la terminal un chau antes que un hola?
+¿Cuántas tareas creó cada thread?
+¿La cantidad de tareas que ejecuta cada thread es la misma que las que crea? Modificar el programa para imprimir el identificador del thread que la ejecuta.
