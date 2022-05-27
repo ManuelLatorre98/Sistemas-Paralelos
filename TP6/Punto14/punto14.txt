@@ -1,3 +1,13 @@
 ¿Puede quedar impreso en la terminal un chau antes que un hola?
+- Como tengo 2 hilos, cada hilo esperara a sus propias tareas (por el taskwait) 
+pero no a las del otro por lo ocurrira que se imprimiran los primeros 10 holas y una vez finalizadas
+dichas tareas cada hilo padre imprimira 1 chau
+
 ¿Cuántas tareas creó cada thread?
+- Cada thread crea 10 tareas, 2 hilos osea 20 tareas creadas en total
+
 ¿La cantidad de tareas que ejecuta cada thread es la misma que las que crea? Modificar el programa para imprimir el identificador del thread que la ejecuta.
+- Cuando un thread crea una task, este puede seguir ejecutando en paralelo con dicha task que se asigna a otro hilo
+  por lo que no necesariamente ejecuta las tarea que crea a no ser que se indique que lo haga
+  una vez termina sus iteraciones el padre puede ser seleccionado para realizar tareas
+
