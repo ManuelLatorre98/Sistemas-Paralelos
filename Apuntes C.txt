@@ -2,3 +2,7 @@
 p hace referencia a la direccion almacenada en p
 *p hace referencia al valor almacenado en la direccion a la que apunta p (haria como un direccionamiento
 para obtener el dato)
+
+
+export OMP_NUM_THREADS=2
+echo $OMP_NUM_THREADS

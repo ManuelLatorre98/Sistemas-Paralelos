@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "punto1": "c"
+        "punto1": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "omp.h": "c"
     }
 }
